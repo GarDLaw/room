@@ -12,7 +12,7 @@ public class ModItems
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ROOM.MODID);
 
-    public static final RegistryObject<Item> ROOM_INGOT = ITEMS.register("room_ingot", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ROOM_INGOT = ITEMS.register("room_ingot", () -> new Item(new Item.Properties().maxStackSize(1).group(ItemGroup.MATERIALS)));
     public static final RegistryObject<Item> ROOM_STICK = ITEMS.register("room_stick", () -> new Item(new Item.Properties().maxStackSize(1).group(ItemGroup.MATERIALS)));
 
 
