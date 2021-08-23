@@ -1,5 +1,6 @@
 package fr.law.room;
 
+import fr.law.room.init.ModBlocks;
 import fr.law.room.init.ModItems;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -21,6 +22,7 @@ public class ROOM
 
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.ITEMS.register(bus);
+        ModBlocks.BLOCKS.register(bus);
 
     }
 
